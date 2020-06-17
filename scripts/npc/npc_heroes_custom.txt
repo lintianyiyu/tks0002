@@ -16,6 +16,13 @@
 		"Ability7"	""
 		"Ability8"	""
 		"Ability9"	"skill_player_noattack"
+		"Ability10"	""
+		"Ability11"	""
+		"Ability12"	""
+		"Ability13"	""
+		"Ability14"	""
+		"Ability15"	""
+		"Ability16"	""
 		// Range of vision at night time.
 		"VisionNighttimeRange"	"1800"
 		"StatusHealthRegen"	"0"
