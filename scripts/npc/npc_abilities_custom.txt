@@ -5195,5 +5195,65 @@
 			}
 		}
 	}
+// 西索
+// 2020/06/17
+// 关羽的武圣，带羁绊加强
 
+	"skill_hero_wusheng_clone"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"greevil_blade_fury"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_ALL"
+		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitDamageType"	"DAMAGE_TYPE_PHYSICAL"
+		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
+		"MaxLevel"	"10"
+		"LevelsBetweenUpgrades"	"1"
+		"AbilityCooldown"	"0.5"
+		"AOERadius"	"%radius"
+		"precache"
+		{
+			"particle"	"particles/econ/items/axe/axe_cinder/axe_cinder_battle_hunger_start.vpcf"
+		}
+		"Modifiers"
+		{
+			"modifier_skill_hero_wusheng_clone"
+			{
+				"Passive"	"1"
+				"OnAttacked"
+				{
+					"RunScript"
+					{
+						"ScriptFile"	"skill/hero_wusheng.lua"
+						"Function"	"wusheng"
+					}
+				}
+				"IsHidden"	"1"
+			}
+		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"damage"	"80 240 480 800 1200 1680 224 2880 3600 4400"
+			}
+			"02"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"radius"	"215"
+			}
+			"03"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"chance"	"20"
+			}
+			"04"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"abi_vam"	"15"
+			}
+		}
+	}
 }
